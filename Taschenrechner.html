@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+      }
+
+      h1 {
+        margin-top: 100px;
+        margin-left: 250px;
+      }
+
+      h3 {
+        margin-left: 250px;
+      }
+
+      #main-div {
+        border: 1px solid black;
+        width: 320px;
+        height: 502px;
+        margin-top: 100px;
+        margin-left: 350px;
+      }
+
+      #display {
+        border: 1px solid black;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        font-size: 60px;
+        background-color: rgb(0, 161, 220);
+      }
+
+      span {
+        border: 1px solid black;
+        font-size: 50px;
+        cursor: pointer;
+      }
+
+      .first-row {
+        margin-top: 5px;
+      }
+
+      .second-row {
+        margin-top: 19px;
+      }
+
+      .third-row {
+        margin-top: 29px;
+      }
+
+      .fourth-row {
+        margin-top: 29px;
+      }
+
+      .fith-row {
+        margin-top: 24px;
+      }
+
+      .span-element-one {
+        margin-left: 0px;
+        margin-right: -5px;
+        padding-top: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 5px;
+      }
+
+      .span-element-two {
+        margin-left: 0px;
+        margin-right: -5px;
+        padding-top: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+        background-color: red;
+      }
+      .span-element-three {
+        margin-left: 0px;
+        margin-right: -5px;
+        padding-top: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+        background-color: orange;
+      }
+      .span-element-foure {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-top: 5px;
+        padding-left: 22.7px;
+        padding-right: 22.7px;
+        padding-bottom: 5px;
+        background-color: green;
+      }
+      .span-element-five {
+        margin-left: 0px;
+        margin-right: -5px;
+        padding-top: 15px;
+        padding-left: 27.3px;
+        padding-right: 27.3px;
+        padding-bottom: 15px;
+        background-color: aqua;
+      }
+      .span-element-six {
+        margin-left: 0px;
+        margin-right: -5px;
+        padding-top: 15px;
+        padding-left: 27.3px;
+        padding-right: 27.3px;
+        padding-bottom: 15px;
+        background-color: aqua;
+      }
+
+      .span-element-seven {
+        margin-left: 0px;
+        margin-right: -5px;
+        padding-top: 15px;
+        padding-left: 27.3px;
+        padding-right: 27.3px;
+        padding-bottom: 15px;
+        background-color: aqua;
+      }
+      .span-element-eight {
+        margin-left: 0px;
+        margin-right: -5px;
+        padding-top: 15px;
+        padding-left: 27.3px;
+        padding-right: 27.3px;
+        padding-bottom: 15px;
+        background-color: green;
+      }
+      .span-element-nine {
+        margin-left: 0px;
+        margin-right: -5px;
+        padding-top: 15px;
+        padding-left: 27.3px;
+        padding-right: 27.3px;
+        padding-bottom: 15px;
+        background-color: aqua;
+      }
+      .span-element-ten {
+        margin-left: 0px;
+        margin-right: -5px;
+        padding-top: 15px;
+        padding-left: 27.3px;
+        padding-right: 27.3px;
+        padding-bottom: 15px;
+        background-color: aqua;
+      }
+
+      .span-element-eleven {
+        margin-left: 0px;
+        margin-right: -5px;
+        padding-top: 15px;
+        padding-left: 27.3px;
+        padding-right: 27.3px;
+        padding-bottom: 15px;
+        background-color: aqua;
+      }
+
+      .span-element-twelf {
+        margin-left: 0px;
+        margin-right: -5px;
+        padding-top: 15px;
+        padding-left: 31.5px;
+        padding-right: 31.5px;
+        padding-bottom: 15px;
+        background-color: green;
+      }
+
+      .span-element-thirteen {
+        margin-left: 0px;
+        margin-right: -5px;
+        padding-top: 15px;
+        padding-left: 27.3px;
+        padding-right: 27.3px;
+        padding-bottom: 15px;
+        background-color: aqua;
+      }
+
+      .span-element-foureteen {
+        margin-left: 0px;
+        margin-right: -5px;
+        padding-top: 15px;
+        padding-left: 27.3px;
+        padding-right: 27.3px;
+        padding-bottom: 15px;
+        background-color: aqua;
+      }
+
+      .span-element-sixteen {
+        margin-left: 0px;
+        margin-right: -5px;
+        padding-top: 15px;
+        padding-left: 27.3px;
+        padding-right: 27.3px;
+        padding-bottom: 15px;
+        background-color: aqua;
+      }
+
+      .span-element-seventeen {
+        margin-left: 0px;
+        margin-right: -5px;
+        padding-top: 15px;
+        padding-left: 25.5px;
+        padding-right: 25.5px;
+        padding-bottom: 15px;
+        background-color: green;
+      }
+
+      .span-element-eighteen {
+        margin-left: 0px;
+        margin-right: -5px;
+        padding-top: 10px;
+        padding-left: 22.5px;
+        padding-right: 22.5px;
+        padding-bottom: 10px;
+      }
+
+      .span-element-nineteen {
+        margin-left: 0px;
+        margin-right: -5px;
+        padding-top: 10px;
+        padding-left: 27px;
+        padding-right: 27px;
+        padding-bottom: 10px;
+        background-color: aqua;
+      }
+
+      .span-element-twenty {
+        margin-left: 0px;
+        margin-right: -5px;
+        padding-top: 10px;
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-bottom: 10px;
+        background-color: aqua;
+      }
+
+      .span-element-twentyone {
+        margin-left: 0px;
+        margin-right: -5px;
+        padding-top: 10px;
+        padding-left: 27px;
+        padding-right: 27px;
+        padding-bottom: 10px;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Einfacher und simpler Taschenrechner</h1>
+    <h3>Die Felder mit dem X vom Taschenrechner sind NICHT belegt.</h3>
+    <div id="main-div">
+      <div id="display"></div>
+
+      <div class="first-row">
+        <span class="span-element-one">X</span>
+        <span class="span-element-two" onclick="clean()">AC</span>
+        <span class="span-element-three" onclick="correction()">COR</span>
+        <span class="span-element-foure" onclick="addOperator('/')">/</span>
+      </div>
+
+      <div class="second-row">
+        <span class="span-element-five" onclick="addOperator(7)">7</span>
+        <span class="span-element-six" onclick="addOperator(8)">8</span>
+        <span class="span-element-seven" onclick="addOperator(9)">9</span>
+        <span class="span-element-eight" onclick="addOperator('*')">*</span>
+      </div>
+
+      <div class="third-row">
+        <span class="span-element-nine" onclick="addOperator(4)">4</span>
+        <span class="span-element-ten" onclick="addOperator(5)">5</span>
+        <span class="span-element-eleven" onclick="addOperator(6)">6</span>
+        <span class="span-element-twelf" onclick="addOperator('-')">-</span>
+      </div>
+
+      <div class="fourth-row">
+        <span class="span-element-thirteen" onclick="addOperator(1)">1</span>
+        <span class="span-element-foureteen" onclick="addOperator(2)">2</span>
+        <span class="span-element-sixteen" onclick="addOperator(3)">3</span>
+        <span class="span-element-seventeen" onclick="addOperator('+')">+</span>
+      </div>
+
+      <div class="fith-row">
+        <span class="span-element-eighteen">X</span>
+        <span class="span-element-nineteen" onclick="addOperator(0)">0</span>
+        <span class="span-element-twenty" onclick="addOperator('.')">,</span>
+        <span class="span-element-twentyone" onclick="result()">=</span>
+      </div>
+    </div>
+
+    <script>
+      function addOperator(operator) {
+        document.getElementById("display").innerHTML += operator;
+      }
+
+      function result() {
+        let display = document.getElementById("display");
+        let result = eval(display.innerHTML);
+        display.innerHTML = result;
+      }
+
+      function correction() {
+        let display = document.getElementById("display").innerHTML;
+        //display.innerHTML = display.innerHTML.slice(0, -4);
+        /*  wenn das Programm wissen muss/soll das sich im Element wie hier im Display leere Zeichen
+                befinden muss das Programm das wissen
+
+                die leeren Zeichen werden wurden bei den Rechenoperatoren hinzugefügt
+            
+            */
+
+        if (display == "") {
+          document.getElementById("display").innerHTML = display.slice(0, -3);
+        } else {
+          document.getElementById("display").innerHTML = display.slice(0, -1);
+        }
+      }
+
+      function clean() {
+        let display = document.getElementById("display").innerHTML;
+        document.getElementById("display").innerHTML = display.slice(0, null);
+      }
+    </script>
+  </body>
+</html>
